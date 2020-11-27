@@ -32,7 +32,8 @@ body {
 
 img.carrouselResize{
 
-    width:auto; 
+    width:auto;
+	height:450px;
     text-align:center; 
     padding:20px;
     object-fit: contain;
@@ -58,4 +59,24 @@ img.topLogo{
 
 .cTxt{
 	color : orange;
+}
+
+#divAccueil,
+#divProduction,
+#divContact
+{
+	display:none;
+}
+
+#divAccueil:target
+{
+	display:block;
+}
+#divProduction:target
+{
+	display:block;
+}
+#divContact:target
+{
+	display:block;
 }
