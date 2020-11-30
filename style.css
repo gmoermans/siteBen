@@ -1,13 +1,41 @@
 body {
   padding: 0;
   margin: 0;
-  background: #131313;
+  /*background: #131313;
   color: orange;
+  */
+  background-image: url("logo_ben.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.revertBg, h1, h2, h3, h4, h5{
+  color: rgb(242,145,30);
+  mix-blend-mode: difference;
 }
 /*--- navigation bar ---*/
 .navbar {
-  background:#6ab446;
+  background:orange;
 }
+
+.image{
+
+}
+
+.bg{
+  /* The image used */
+  background-image: url("logo_ben.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .nav-link,
 .navbar-brand {
   color: #fff;
@@ -39,11 +67,6 @@ img.carrouselResize{
     object-fit: contain;
 }
 
-img.topLogo{
-	width:20%;
-    height: 20%;
-    overflow: hidden;
-}
 
 .centrer{
   text-align: center;
@@ -61,6 +84,8 @@ img.topLogo{
 	color : orange;
 }
 
+
+/*
 #divAccueil,
 #divProduction,
 #divContact
@@ -80,3 +105,5 @@ img.topLogo{
 {
 	display:block;
 }
+
+*/
