@@ -65,7 +65,7 @@ body {
 img.carrouselResize{
 
     width:auto;
-	height:450px;
+	height:250px;
     text-align:center; 
     padding:20px;
     object-fit: contain;
@@ -101,7 +101,7 @@ img.carrouselResize{
   float: left;
   width: 33%;
   padding: 10px;
-  height: 300px;
+  height: 220px;
 }
 
 /* Clear floats after the columns */
@@ -110,6 +110,23 @@ img.carrouselResize{
   display: table;
   clear: both;
 }
+
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(3);
+  cursor: zoom-out;
+}
+
+#inline{width:100%;height:auto;display:flex;} 
 
 /*
 #divAccueil,
