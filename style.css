@@ -29,7 +29,7 @@ body {
 
 .bg{
   /* The image used */
-  background-image: url("logo_ben.jpg");
+  background-image: url("wbg.svg");
 
   /* Full height */
   height: 100%;
@@ -84,10 +84,32 @@ img.carrouselResize{
 	text-align: right;
 }
 
+.cLeft{
+	float: left;
+}
+
+.cRight{
+	float: right;
+}
+
 .cTxt{
 	color : orange;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*
 #divAccueil,
