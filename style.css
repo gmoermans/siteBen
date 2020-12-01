@@ -10,13 +10,13 @@ body {
   height: 100%;
 }
 
-.revertBg, h1, h2, h3, h4, h5{
+.revertBg{
   color: rgb(242,145,30);
   mix-blend-mode: difference;
 }
 /*--- navigation bar ---*/
 .navbar {
-  background:orange;
+  background:rgb(242,145,30);
   position: fixed;
   z-index: 1;
   top: 0;
@@ -116,7 +116,7 @@ input[type=checkbox] {
 }
 
 .container img {
-  margin: 100px;
+  margin: 10px;
   transition: transform 0.25s ease;
   cursor: zoom-in;
 }
@@ -126,27 +126,8 @@ input[type=checkbox]:checked ~ label > img {
   cursor: zoom-out;
 }
 
-#inline{width:100%;height:auto;display:flex;} 
-
-/*
-#divAccueil,
-#divProduction,
-#divContact
-{
-	display:none;
-}
-
-#divAccueil:target
-{
-	display:block;
-}
-#divProduction:target
-{
-	display:block;
-}
-#divContact:target
-{
-	display:block;
-}
-
-*/
+#inline{
+	width:100%;
+	height:auto;
+	display:flex;
+} 
