@@ -56,73 +56,64 @@
 
 		<div id = "divProduction">
 			<h1>Nos créations</h1>
-			
-			
-			<div id = "inline">
-			
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck1">
-				  <label for="zoomCheck1">
-					<img src="ben1.jpg" class="carrouselResize">
-				  </label>
-				</div>
+				<p>
+					<inline>
+						<img class="myImages" id="myImg" src="ben1.jpg" width="300" height="200">
+						<img src = "logo_ben1.jpg" class="carrouselResize">
+						<img class="myImages" id="myImg" src="ben3.jpg" width="300" height="200">
+					</inline>
+				</p>
 				
-				<img src="logo_ben1.jpg" class = "carrouselResize">
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck2">
-				  <label for="zoomCheck2">
-					<img src="ben3.jpg" class="carrouselResize">
-				  </label>
-				</div>
-				
-			</div>
-			
-			<div id = "inline">
-
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck3">
-				  <label for="zoomCheck3">
-					<img src="ben4.jpg" class="carrouselResize">
-				  </label>
-				</div>
-				
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck4">
-				  <label for="zoomCheck4">
-					<img src="ben5.jpg" class="carrouselResize">
-				  </label>
-				</div>
-				
-			</div>
-			
+				<p>
+					<inline>
+						<img class="myImages" id="myImg" src="ben4.jpg" width="300" height="200">
+						<img class="myImages" id="myImg" src="ben5.jpg" width="300" height="200">
+					</inline>
+				</p>
 		</div>
 
 		<div id = "divRenovation">
-		<h1>Travaux de rénovation</h1>
-		
-			<div id = "inline">
-			
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck5">
-				  <label for="zoomCheck5">
-					<img src="ben6.jpg" class="carrouselResize">
-				  </label>
-				</div>
-				
-				
-				<div class="container">
-				  <input type="checkbox" id="zoomCheck6">
-				  <label for="zoomCheck6">
-					<img src="renovation.jpg" class="carrouselResize">
-				  </label>
-				</div>
-				
-			</div>
-			
-				
-				
+			<h1>Travaux de rénovation</h1>
+				<img class="myImages carrouselResize" id="myImg" src="ben6.jpg" width="300" height="200">
+				<img class="myImages carrouselResize" id="myImg" src="renovation.jpg" width="300" height="200">		
 		</div>
-			
+		
+
+		<script>
+			// create references to the modal...
+			var modal = document.getElementById('myModal');
+			// to all images -- note I'm using a class!
+			var images = document.getElementsByClassName('myImages');
+			// the image in the modal
+			var modalImg = document.getElementById("img01");
+			// and the caption in the modal
+			var captionText = document.getElementById("caption");
+
+			// Go through all of the images with our custom class
+			for (var i = 0; i < images.length; i++) {
+			  var img = images[i];
+			  // and attach our click listener for this image.
+			  img.onclick = function(evt) {
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			  }
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">
+		  <div id="caption"></div>
+		</div>
+
+
 		</header>
 
 		<footer>
@@ -143,6 +134,8 @@
 				</div>
 			</div>
 		</footer>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="main.js"></script>
