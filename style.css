@@ -67,6 +67,16 @@ img.fullPageSize{
   position: relative;*/
 }
 
+
+img.centralLogoResize{
+
+    width:auto;
+	height:350px;
+    text-align:center; 
+    padding:20px;
+    object-fit: contain;
+}
+
 img.carrouselResize{
 
     width:auto;
