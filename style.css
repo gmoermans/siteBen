@@ -1,13 +1,13 @@
+/*Hardcoding of image size ??*/
+
 body {
   padding: 0;
   margin: 0;
-  /*background: #131313;
-  color: orange;
-  */
   background-image: url("logo_ben.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
+  width:auto;
 }
 
 .revertBg{
@@ -25,7 +25,7 @@ body {
 
 img.fullPageSize{
 	width: 100%;
-	height: 400px;
+	height: auto;
 	
 }
 .image{
@@ -68,13 +68,11 @@ img.fullPageSize{
 }
 
 
-img.centralLogoResize{
+.centralLogoResize{
 
-    width:auto;
-	height:350px;
-    text-align:center; 
-    padding:20px;
-    object-fit: contain;
+	width:30%;
+	height:auto;
+
 }
 
 img.carrouselResize{
@@ -174,6 +172,8 @@ input[type=checkbox]:checked ~ label > img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  width:25%;
+  height:auto;
 }
 
 #myImg:hover {
