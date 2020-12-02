@@ -294,7 +294,7 @@ input, textarea {
   font: 1em sans-serif;
 
   /* Pour que tous les champs texte aient la même dimension */
-  width: 300px;
+  width: auto;
   box-sizing: border-box;
 
   /* Pour harmoniser le look & feel des bordures des champs texte */
