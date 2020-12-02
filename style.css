@@ -10,6 +10,14 @@ body {
   width:auto;
 }
 
+
+.footerImg{
+	float :left;
+	height:auto;
+	width:100%;
+}​
+
+
 .revertBg{
   color: rgb(242,145,30);
   mix-blend-mode: difference;
@@ -79,6 +87,7 @@ img.fullPageSize{
 	width:3%;
 	height:auto;
 }
+
 img.carrouselResize{
 
     width:auto;
