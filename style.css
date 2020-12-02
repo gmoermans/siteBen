@@ -269,12 +269,12 @@ input[type=checkbox]:checked ~ label > img {
 form {
   /* Uniquement centrer le formulaire sur la page */
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   height: auto;
-  /* Encadré pour voir les limites du formulaire */
+  /* Encadré pour voir les limites du formulaire 
   padding: 1em;
   border: 1px solid #CCC;
-  border-radius: 1em;
+  border-radius: 1em;*/
 }
 
 form div + div {
