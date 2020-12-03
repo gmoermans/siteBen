@@ -1,0 +1,104 @@
+			<nav class="navbar navbar-expand-md">
+
+				<a class="navbar-brand" href="#barLogo">Toitures Lecroart</a>
+				
+				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="main-navigation">
+					<ul class="navbar-nav">
+
+						<li class="nav-item">
+							<a class="nav-link" href="#divAccueil">Acceuil</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#divProduction">Créations</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#divRenovation">Rénovations</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#divContact">Contact</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</nav>
+			
+			
+			//Hold all div
+var divAccueil = $("#divAccueil");
+var divProduction = $("#divProduction");
+var divRenovation = $("#divRenovation");
+var divContact = $("#divContact");
+
+
+//Hold all div positions
+var posAccueil = divAccueil.position();
+var posProduction = divProduction.position();
+var posRenovation = divRenovation.position();
+var posContact = divContact.position();
+
+	console.log("posAccueil : ");
+	console.log(posAccueil.top);
+	console.log("posProduction : ");
+	console.log(posProduction.top);
+	console.log("posRenovation : ");
+	console.log(posRenovation.top);
+	console.log("posContact: ");
+	console.log(posContact.top);
+
+	
+//Now when scroll event trigger do following
+$(window).scroll(function () {
+	var windowpos = $(window).scrollTop();
+	console.log("windowpos : ");
+	console.log(windowpos);
+	if( windowpos >= 0 && windowpos < document.getElementById("divAccueil").clientHeinght )
+	{
+		divAccueil.addClass("afterScroll");
+		console.log("show accueil");
+	}
+	else if ( windowpos >= posProduction.top && windowpos < posRenovation.top )
+	{
+		divAccueil.removeClass("afterScroll");
+		divProduction.addClass("afterScroll");
+		console.log("show production");
+	}
+	else if( windowpos >= posRenovation.top && windowpos < posContact.top )
+	{
+		divProduction.removeClass("afterScroll");
+		divRenovation.addClass("afterScroll");
+		console.log("Show renovation");
+	}
+	else if( windowpos >= posContact.top )
+	{
+		divRenovation.removeClass("afterScroll");
+		divContact.addClass("afterScroll");
+		console.log("Show contact");
+	}
+	else
+	{
+		console.log("where are you dude ???");
+	}
+	
+	/*
+	//Now if you scroll more than 100 pixels vertically change the class to AfterScroll
+	// I am taking 100px scroll, you can take whatever you need
+	if (windowpos >= (pos.top - 100)) {
+		console.log("i displayed the calss ");
+		div.addClass("afterScroll");
+	}
+	//If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
+	else {
+		div.removeClass("afterScroll");
+		console.log("i hide the calss ");
+	}
+	*/
+
+});
