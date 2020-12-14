@@ -50,6 +50,12 @@ header{
 				
 }
 
+h1{
+        font-weight: 900;
+        color: #fff;
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke: 1px #000;
+}
 header h1{
 	position: absolute;
 	top :0 ;
@@ -128,15 +134,32 @@ img.fullPageSize{
 .invisibleDiv{
   width: 20%;
   height: auto;
-  transition: width 2s, height 2s;
+  transition: width 1s, height 1s;
+  background-color:black;
+  background-size:0%;
+  color:orange;
 }
 
 .invisibleDiv:hover{
 	width:100%;
 	height:auto;
 	align: center;
+	background-color:black;
+	background-size:100%;
+	
 }
 
+.invisibleDivSocial{
+  width: 20%;
+  height: auto;
+  transition: width 1s, height 1s;
+}
+
+.invisibleDivSocial:hover{
+	width:100%;
+	height:auto;
+	align: center;
+}
 .faceBookLogo{
 	width:10%;
 	height:auto;
