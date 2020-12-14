@@ -56,11 +56,13 @@ h1{
         -webkit-text-fill-color: #fff;
         -webkit-text-stroke: 1px #000;
 }
+
 header h1{
 	position: absolute;
 	top :0 ;
 	right : 0;
 }
+
 footer{
         background-image: url("fter1.png");
 
@@ -135,8 +137,6 @@ img.fullPageSize{
   width: 20%;
   height: auto;
   transition: width 1s, height 1s;
-  background-color:black;
-  background-size:0%;
   color:orange;
 }
 
@@ -144,8 +144,6 @@ img.fullPageSize{
 	width:100%;
 	height:auto;
 	align: center;
-	background-color:black;
-	background-size:100%;
 	
 }
 
