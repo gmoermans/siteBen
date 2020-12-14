@@ -58,6 +58,13 @@ h1{
         -webkit-text-stroke: 1px #000;
 }
 
+img.fixedSize{
+	width:20%;
+	height:20%;
+	text-align:center; 
+	padding:20px;
+	object-fit: contain;
+}
 header h1{
 	position: absolute;
 	top :0 ;
@@ -167,7 +174,7 @@ img.fullPageSize{
 img.carrouselResize{
 
     width:auto;
-	height:250px;
+    height:250px;
     text-align:center; 
     padding:20px;
     object-fit: contain;
