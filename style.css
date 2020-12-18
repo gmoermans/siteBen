@@ -21,18 +21,22 @@ body, html{
 	overflow-x: hidden;
 }
 
+#map {
+height: 400px;
+/* The height is 400 pixels */
+width: 100%;
+/* The width is the width of the web page */
+}
 header{
 	
-	
-		
-        background-image: url("band.png");
+        background-image: url("band3.png");
 		
         padding-bottom: 0;
 		padding-top:54%;
 		padding-left:0;
 		padding-right:0;
 
-        background-size: 100%;
+        height:100%;
         background-repeat: no-repeat;
         background-size: cover;
         margin-left: auto;
@@ -45,9 +49,94 @@ header{
 		font-family: "Arial Black", sans-serif;
 		font-size: 4.5em;
 		letter-spacing: -1px;
-		background-color: black;
 		color: white;
-				
+}
+
+.contentAccueilDiv{
+	visibility:hidden;
+	opacity: 0;
+	transition: .3s;
+	width:0%;
+}
+
+.contentAccueilDiv:hover{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+.titleAcceuilDiv:hover + .contentAccueilDiv{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+.contentCreationDiv{
+	visibility:hidden;
+	  opacity: 0;
+	  transition: .3s;
+	  width:0%;
+}
+
+.contentCreationDiv:hover{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+.titleCreationDiv:hover + .contentCreationDiv{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+.contentRenovationDiv{
+	visibility:hidden;
+	  opacity: 0;
+	  transition: .3s;
+	  width:0%;
+}
+
+.contentRenovationDiv:hover{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+.titleRenovationDiv:hover + .contentRenovationDiv{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+.contentContactDiv{
+	visibility:hidden;
+	  opacity: 0;
+	  transition: .3s;
+	  width:0%;
+}
+
+.contentContactDiv:hover{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+.titlContactDiv:hover + .contentContactDiv{
+	visibility:visible;
+	opacity: 1;
+	width:100%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 50px 0 0 !important;
+    font-size: 24px !important;
+    line-height: normal !important;
+    font-weight: 400 !important;.
+  }
+}
+.presentationResize{
+	height: 50%;
+	width: auto;
 }
 
 h1{
@@ -58,13 +147,6 @@ h1{
         -webkit-text-stroke: 1px #000;
 }
 
-img.fixedSize{
-	width:20%;
-	height:20%;
-	text-align:center; 
-	padding:20px;
-	object-fit: contain;
-}
 header h1{
 	position: absolute;
 	top :0 ;
@@ -145,14 +227,12 @@ img.fullPageSize{
   width: 20%;
   height: auto;
   transition: width 1s, height 1s;
-  color:orange;
 }
 
 .invisibleDiv:hover{
 	width:100%;
 	height:auto;
 	align: center;
-	
 }
 
 .invisibleDivSocial{
@@ -171,10 +251,24 @@ img.fullPageSize{
 	height:auto;
 }
 
-img.carrouselResize{
+.presLogo{
+	width:65%;
+	height:auto;
 
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+img.carrouselResize{
+	
     width:auto;
-    height:250px;
+	height:250px;
     text-align:center; 
     padding:20px;
     object-fit: contain;
