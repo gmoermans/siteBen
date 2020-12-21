@@ -12,7 +12,9 @@ body, html{
 	font-variant-caps: normal;
 	font-weight: 400;
 	font-stretch: normal;
-	font-size: 20px;
+	
+	font-size: 16px;
+	
 	line-height: 28px;
 	font-family: "gibson";
 	font-size-adjust: none;
@@ -57,6 +59,7 @@ header{
 		color: white;
 				
 }
+
 
 h1{
 	transform: scale(1.05, 1.25);
