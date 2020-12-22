@@ -1,22 +1,23 @@
 /*Hardcoding of image size ??*/
 
-body, html{
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+
+body:not(.devisAdvisor){
 	
 	background-image: url("wbg.svg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
 	/*Font style*/
-	font: 400 20px/28px "gibson";
+	font: 400 16px/28px "gibson";
 	font-style: normal;
 	font-variant-caps: normal;
 	font-weight: 400;
 	font-stretch: normal;
 	
-	font-size: 16px;
-	
 	line-height: 28px;
-	font-family: "gibson";
+	font-family: 'Arvo', serif;
 	font-size-adjust: none;
 	
 	width: 100%;
@@ -32,10 +33,20 @@ body, html{
 	overflow-x: hidden;
 }
 
+.devisAdvisor{
+  font-family: 'Arvo', serif;
+  text-align: left;
+  color:orange;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 23px;
+  font-size: 20px;
+}
+
 header{
-	
-	
-		
+
         background-image: url("band3.png");
 		
         padding-bottom: 0;
@@ -49,15 +60,8 @@ header{
         margin-left: auto;
         margin-right: auto;
 		
-		
-		text-align:center;
 		position: relative;
 		
-		font-family: "Arial Black", sans-serif;
-		font-size: 4.5em;
-		letter-spacing: -1px;
-		color: white;
-				
 }
 
 
@@ -66,9 +70,12 @@ h1{
         font-weight: 900;
         color: #fff;
         -webkit-text-fill-color: orange;
-        -webkit-text-stroke: 1px #000;
+        -webkit-text-stroke: 0.7px #000;
 }
 
+p{
+	font-size: 16px;
+}
 img.fixedSize{
 	width:20%;
 	height:20%;
@@ -80,6 +87,7 @@ header h1{
 	position: absolute;
 	top :0 ;
 	right : 0;
+	font-size: 50px;
 }
 
 footer{
