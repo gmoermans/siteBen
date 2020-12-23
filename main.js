@@ -10,7 +10,18 @@ var modalImg = document.getElementById("img01");
 //caption into the model on click ( inivisible by default )
 var captionText = document.getElementById("caption");
 
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
