@@ -91,8 +91,27 @@ h1{
         -webkit-text-stroke: 0.7px #000;
 }
 
-p{
+.ctc{
+	/*dummy*/
+}
+
+p:not(.ctc){
 	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+	p:not(.ctc){
+		font-size: 16px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 20%;
+		margin-left: 20%;
+	}
 }
 
 .nv{
