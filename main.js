@@ -13,6 +13,7 @@ var captionText = document.getElementById("caption");
 window.onscroll = function() {stickyScroll()};
 
 var navbar = document.getElementById("navbar");
+
 var sticky = navbar.offsetTop;
 
 function stickyScroll() {
