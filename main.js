@@ -14,12 +14,6 @@ window.onscroll = function() {stickyScroll()};
 
 var navbar = document.getElementById("navbar");
 
-var sticky = navbar.offsetTop;
-
-//Test of sidebar display bottom the video
-
-var videoBottom = document.getElementById("myVideo").offset.bottom;
-
 function openNav() {
   document.getElementById("navbar").style.width = "250px";
 }
@@ -28,17 +22,20 @@ function closeNav() {
   document.getElementById("navbar").style.width = "0";
 }
 
-
 function stickyScroll()
 {
-  if (window.pageYOffset >= sticky)
+  if (window.scrollY >= 15)
   {
 	navbar.classList.add("sidenav");
 	openNav();
   }
+  else if ( window.scrollTop + window.height == document.height )
+  {
+	  console.log('you are on bottom of page ');
+	  navbar.classList.replace("sidenav", "bnavbar");
+  }
   else
   {
-    navbar.classList.remove("sticky");
 	closeNav();
   }
 }

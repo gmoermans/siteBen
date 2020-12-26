@@ -6,7 +6,8 @@
 html{
 	scroll-behavior: smooth;
 }
-body:not(.devisAdvisor){
+
+body{
 	
 	background-image: url("wbg.svg");
 	background-repeat: no-repeat;
@@ -36,19 +37,6 @@ body:not(.devisAdvisor){
 	overflow-x: hidden;
 }
 
-.devisAdvisor{
-  font-family: 'Arvo', serif;
-  text-align: left;
-  color:orange;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: black;
-  padding: 23px;
-  font-size: 20px;
-  z-index: 998;
-}
-
 video {
   position: absolute;
   top: 0;
@@ -64,8 +52,6 @@ video {
 
 header{
 
-       /* background-image: url("band.png"); */
-		
         padding-bottom: 0;
 		padding-top:54%;
 		padding-left:0;
@@ -77,10 +63,8 @@ header{
         margin-left: auto;
         margin-right: auto;
 		
-		position: relative;
-		
+		position: relative;	
 }
-
 
 h1{
 	z-index: 997;
@@ -110,11 +94,7 @@ p:not(.ctc){
 	}
 }
 
-.nv{
-	  margin-bottom: 0px;
-}
-
-div:not(.nv)
+div
 {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -176,102 +156,9 @@ div:not(.nv)
     grid-row-end: 9;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-img.fixedSize{
-	width:20%;
-	height:20%;
-	text-align:center; 
-	padding:20px;
-	object-fit: contain;
-}
-
-/*
-#navbar {
-  z-index: 998;
-  overflow: hidden;
-  background-color: #333;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: 0px;
-}
-
-#navbar a {
-  z-index: 998;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.noHov{
-	
-}
-
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-
-.nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
-}
-.nav-link {
-  margin-right: 1em !important;
-}
-.nav-link:hover {
-  color: #000;
-}
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
-*/
 footer{
-        background-image: url("fter1.png");
 
-		
+		background-color: #111;
         padding-bottom: 9%;
 		padding-top:0;
 		padding-left:0;
@@ -282,81 +169,12 @@ footer{
         margin-left: auto;
         margin-right: auto;
 		
+		color : orange;
 		text-align:center;
 		position: relative;
 }
 
-footer span{
-	position: absolute;
-	bottom: 0;
-}
-.beforeScroll{
-	/*display:none;*/
-}
-
-.afterScroll{
-	/*display:block;*/
-}
-
-.revertBg{
-  color: rgb(242,145,30);
-  mix-blend-mode: difference;
-}
 /*--- navigation bar ---*/
-
-img.fullPageSize{
-	width: 100%;
-	height: auto;
-}
-
-
-.header {
-  /*background-image: url('logo_ben.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;*/
-}
-
-.invisibleDiv{
-  width: 20%;
-  height: auto;
-  transition: width 1s, height 1s;
-  color:orange;
-}
-
-.invisibleDiv:hover{
-	width:100%;
-	height:auto;
-	align: center;
-	
-}
-
-.invisibleDivSocial{
-  width: 20%;
-  height: auto;
-  transition: width 1s, height 1s;
-}
-
-.invisibleDivSocial:hover{
-	width:100%;
-	height:auto;
-	align: center;
-}
-.faceBookLogo{
-	width:10%;
-	height:auto;
-}
-
-img.carrouselResize{
-
-    width:auto;
-    height:250px;
-    text-align:center; 
-    padding:20px;
-    object-fit: contain;
-}
-
-
 .centrer{
   text-align: center;
 }
@@ -391,15 +209,24 @@ img.carrouselResize{
   left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 0; /* Place content 60px from the top */
+  padding-bottom:0;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  margin-bottom: -15px;
-  margin-top:-15px;
+  margin-bottom: 0px;
+  margin-top:0px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  
+  margin-top: 0px;
+  margin-bottom:0px;
+  
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -418,14 +245,39 @@ img.carrouselResize{
   color: white;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+/*BOTTOM NAVBAR*/
+.bnavbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
+.bnavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bnavbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.bnavbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*botom navbar*/
+
+
+
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
