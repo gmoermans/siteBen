@@ -1,7 +1,7 @@
 /*Hardcoding of image size ??*/
 
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
 
 html{
 	scroll-behavior: smooth;
@@ -13,14 +13,14 @@ body:not(.devisAdvisor){
 	background-attachment: fixed;
 
 	/*Font style*/
-	font: 400 16px/28px "gibson";
+	font: 400 16px/28px "Josefin Sans";
 	font-style: normal;
 	font-variant-caps: normal;
 	font-weight: 400;
 	font-stretch: normal;
 	
 	line-height: 28px;
-	font-family: 'Arvo', serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size-adjust: none;
 	
 	width: 100%;
@@ -84,11 +84,7 @@ header{
 
 h1{
 	z-index: 997;
-	transform: scale(1.05, 1.25);
-        font-weight: 900;
-        color: #fff;
-        -webkit-text-fill-color: orange;
-        -webkit-text-stroke: 0.7px #000;
+	font-family: 'Amaranth', sans-serif;
 }
 
 .ctc{
@@ -120,8 +116,8 @@ p:not(.ctc){
 
 div:not(.nv)
 {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /*Gallery*/
@@ -206,6 +202,7 @@ div:not(.nv)
   display: block;
 }
 
+
 img.fixedSize{
 	width:20%;
 	height:20%;
@@ -215,7 +212,7 @@ img.fixedSize{
 }
 
 #navbar {
-	z-index: 998;
+  z-index: 998;
   overflow: hidden;
   background-color: #333;
   margin-left: -15px;
@@ -224,7 +221,7 @@ img.fixedSize{
 }
 
 #navbar a {
-	z-index: 998;
+  z-index: 998;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -234,6 +231,9 @@ img.fixedSize{
   font-size: 15px;
 }
 
+.noHov{
+	
+}
 #navbar a:hover {
   background-color: orange;
   color: black;
