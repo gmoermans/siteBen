@@ -211,6 +211,7 @@ img.fixedSize{
 	object-fit: contain;
 }
 
+/*
 #navbar {
   z-index: 998;
   overflow: hidden;
@@ -234,15 +235,7 @@ img.fixedSize{
 .noHov{
 	
 }
-#navbar a:hover {
-  background-color: orange;
-  color: black;
-}
 
-#navbar a.active {
-  background-color: #fffff;
-  color: white;
-}
 
 .content {
   padding: 16px;
@@ -258,6 +251,23 @@ img.fixedSize{
   padding-top: 60px;
 }
 
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+*/
 footer{
         background-image: url("fter1.png");
 
@@ -299,20 +309,6 @@ img.fullPageSize{
 	height: auto;
 }
 
-.nav-link,
-.navbar-brand {
-  color: #fff;
-  cursor: pointer;
-}
-.nav-link {
-  margin-right: 1em !important;
-}
-.nav-link:hover {
-  color: #000;
-}
-.navbar-collapse {
-  justify-content: flex-end;
-}
 
 .header {
   /*background-image: url('logo_ben.jpg');
@@ -386,6 +382,50 @@ img.carrouselResize{
 	color : orange;
 }
 
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  margin-bottom: -15px;
+  margin-top:-15px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+#sidenav a.active {
+  background-color: #fffff;
+  color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;

@@ -16,11 +16,30 @@ var navbar = document.getElementById("navbar");
 
 var sticky = navbar.offsetTop;
 
-function stickyScroll() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
+//Test of sidebar display bottom the video
+
+var videoBottom = document.getElementById("myVideo").offset.bottom;
+
+function openNav() {
+  document.getElementById("navbar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("navbar").style.width = "0";
+}
+
+
+function stickyScroll()
+{
+  if (window.pageYOffset >= sticky)
+  {
+	navbar.classList.add("sidenav");
+	openNav();
+  }
+  else
+  {
     navbar.classList.remove("sticky");
+	closeNav();
   }
 }
 // Go through all of the images with our custom class
