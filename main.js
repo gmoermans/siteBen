@@ -15,27 +15,69 @@ window.onscroll = function() {stickyScroll()};
 var navbar = document.getElementById("navbar");
 
 const secondBar = document.createElement('div');
-secondBar.innerHTML = '<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  ';
 
-var sideBarBool = true;
+var clientWidth = window.width;
 
-function openNav() {
-	
+var isOpen = false;
+
+
+const openBarButton = document.getElementById("barButton");
+
+function openButton()
+{
+	openBarButton.style.display = "block";
+}
+
+function closeButton()
+{
+	openBarButton.style.display = "none";
+}
+
+function openNavOnSmallScreen()
+{
+	document.getElementById("navbar").style.width = "50%";
+}
+function openNav()
+{
   document.getElementById("navbar").style.width = "15%";
-
 }
 
-function closeNav() {
-	
+function closeNav()
+{
   document.getElementById("navbar").style.width = "0";
-  
 }
 
+if( window.innerWidth < 780 )
+{
+	isOpen = false;
+	openButton();
+}
 function stickyScroll()
 {
 	if (window.scrollY >= 15 )
 	{
-		openNav();
+		console.log( window.innerWidth );
+		if( window.innerWidth > 780 && !isOpen )
+		{
+			//for this point, we need to setting up
+			//the sidebar nav.  In other way, we have
+			//to use a button in order to display or not
+			//display the navbar.
+			closeButton();
+			openNav();
+			isOpen = true;
+		}
+		else if( window.innerWidth < 779 && isOpen )
+		{
+			console.log(" smarphone screen ");
+			closeNav();
+			openButton();
+			isOpen = false;
+		}
+		else
+		{
+			//live your life.
+		}
 	}
 	else if ( window.scrollTop + window.height == document.height )
 	{
@@ -44,7 +86,9 @@ function stickyScroll()
 	else
 	{
 		closeNav();
-	}		
+		isOpen = false;
+	}
+	
 }
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
