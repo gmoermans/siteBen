@@ -20,11 +20,15 @@ secondBar.innerHTML = '<button class="openbtn" onclick="openNav()">☰ Open Side
 var sideBarBool = true;
 
 function openNav() {
+	
   document.getElementById("navbar").style.width = "15%";
+
 }
 
 function closeNav() {
+	
   document.getElementById("navbar").style.width = "0";
+  
 }
 
 function stickyScroll()
@@ -36,7 +40,6 @@ function stickyScroll()
 	else if ( window.scrollTop + window.height == document.height )
 	{
 		  console.log('you are on bottom of page ');
-		  navbar.classList.replace("sidenav", "bnavbar");
 	}
 	else
 	{
