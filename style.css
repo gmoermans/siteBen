@@ -155,9 +155,14 @@ div
     grid-row-end: 9;
 }
 
+.copyright{
+	font-size: 5%;
+	position: absolute;
+    bottom: 0;
+}
 footer{
 
-		background-color: #111;
+		background-image: url('fter1.png');
         padding-bottom: 9%;
 		padding-top:0;
 		padding-left:0;
@@ -199,7 +204,7 @@ footer{
 	color : orange;
 }
 
-.sidenav {
+.sidenav:not(.copyright) {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -233,6 +238,14 @@ footer{
   transition: 0.3s;
 }
 
+.sidebar-footer{
+	height: 50px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	list-style-type: none;
+	padding-bottom:5.5em;
+}
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   background-color: orange;
