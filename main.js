@@ -14,8 +14,13 @@ window.onscroll = function() {stickyScroll()};
 
 var navbar = document.getElementById("navbar");
 
+const secondBar = document.createElement('div');
+secondBar.innerHTML = '<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  ';
+
+var sideBarBool = true;
+
 function openNav() {
-  document.getElementById("navbar").style.width = "250px";
+  document.getElementById("navbar").style.width = "15%";
 }
 
 function closeNav() {
@@ -24,20 +29,19 @@ function closeNav() {
 
 function stickyScroll()
 {
-  if (window.scrollY >= 15)
-  {
-	navbar.classList.add("sidenav");
-	openNav();
-  }
-  else if ( window.scrollTop + window.height == document.height )
-  {
-	  console.log('you are on bottom of page ');
-	  navbar.classList.replace("sidenav", "bnavbar");
-  }
-  else
-  {
-	closeNav();
-  }
+	if (window.scrollY >= 15 )
+	{
+		openNav();
+	}
+	else if ( window.scrollTop + window.height == document.height )
+	{
+		  console.log('you are on bottom of page ');
+		  navbar.classList.replace("sidenav", "bnavbar");
+	}
+	else
+	{
+		closeNav();
+	}		
 }
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {

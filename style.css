@@ -32,7 +32,6 @@ body{
 	padding-left:0;
 	padding-right:0;
 		
-	margin: 0;
 	
 	overflow-x: hidden;
 }
@@ -228,7 +227,7 @@ footer{
   margin-bottom:0px;
   
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5vw;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -244,39 +243,6 @@ footer{
   background-color: #fffff;
   color: white;
 }
-
-/*BOTTOM NAVBAR*/
-.bnavbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.bnavbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.bnavbar a:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.bnavbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/*botom navbar*/
-
-
 
 /* Create two equal columns that floats next to each other */
 .column {
