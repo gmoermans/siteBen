@@ -106,10 +106,14 @@ div
 /*Gallery*/
 
 .gallery {
+
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+	
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+		
 }
 
 .gallery__img {
@@ -255,11 +259,16 @@ footer{
 
 /*Button for openning and closing nav bar*/
 #barButton{
-	float: left;
+	
+	margin: 0;
+	padding : 0;
+	color: white;
+	float: center;
+	background-color: black;
 	display: none;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 20px;
+	top: 0px;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -322,7 +331,7 @@ input[type=checkbox]:checked ~ label > img {
 /*Modal test*/
 
 #myImg {
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
   transition: 0.3s;
   /*width:25%;*/

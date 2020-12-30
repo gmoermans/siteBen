@@ -52,6 +52,22 @@ if( window.innerWidth < 780 )
 	isOpen = false;
 	openButton();
 }
+
+window.addEventListener("click",function(){
+	closeNav();
+	isOpen = false;
+});
+
+
+openBarButton.addEventListener( "click", function(){
+	event.stopPropagation();
+});
+
+navbar.addEventListener( "click",function(event){
+	event.stopPropagation();
+});
+
+
 function stickyScroll()
 {
 	if (window.scrollY >= 15 )
